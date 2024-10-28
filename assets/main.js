@@ -659,4 +659,7 @@ function getOs() {
 
 
 /* === Run App === */
+console.log('main init...');
 runApp();
+
+
