@@ -28,7 +28,10 @@ var OP_RES_USER_INFO = "UserInfo", OP_RES_CHAT = "SendChat",
   OP_RES_RATING_TABLE = "RatingTable";
 
 // var chatScrolling = $('#chat-output-scrolling');
-// var chatMsg = $("#chat-msg-input");
+
+var SPINS_PER_ADD = 3;
+var spinButton = $("#spin-button");
+var spins = 0;
 
 var queryParams;
 var isAuthed = false;
@@ -59,6 +62,14 @@ function sendOperation(operationType, data) {
 
 function sendAuth(authPayload) {
   sendOperation(AUTH_OPERATION_TYPE, authPayload);
+}
+
+function spinButton() {
+  spins++;
+  if (spins >= SPINS_PER_ADD) {
+    spins = 0;
+    showAdds(80);
+  }
 }
 
 function sendChat() {
@@ -305,33 +316,36 @@ function wrapSpan(text) {
 
 function initUi() {
   console.log("initUi");
-  window.scroll(0, 0);
-  chatMsg.focus();
-  $("#chat-msg-input").attr('placeholder', localize('chat'));
 
-  $("form").on('submit', function (e) {
-    e.preventDefault();
-  });
-  $("#reconnect").click(connectToServer);
-  $("#playContent").click(sendPlayRequest);
-  $("#send").click(sendChat);
-  $("#userName").on("mouseup", showRenameWindow);
+  $("#spinButton").click(spinButton);
 
-  $(chatMsg).on('keydown', function(e) {
-    if (e.keyCode === ENTER_KEY_CODE) {
-      sendChat();
-    }
-  });
+  // window.scroll(0, 0);
+  // chatMsg.focus();
+  // $("#chat-msg-input").attr('placeholder', localize('chat'));
 
-  $('body').on('keydown', function(e) {
-    if (e.altKey && e.keyCode === C_KEY_CODE
-     || e.ctrlKey && e.keyCode === TILDE_KEY_CODE
-     || e.keyCode === ENTER_KEY_CODE) {
-      chatMsg.focus();
-    }
-  });
+  // $("form").on('submit', function (e) {
+  //   e.preventDefault();
+  // });
+  // $("#reconnect").click(connectToServer);
+  // $("#playContent").click(sendPlayRequest);
+  // $("#send").click(sendChat);
+  // $("#userName").on("mouseup", showRenameWindow);
 
-  $('[data-toggle="tooltip"]').tooltip();
+  // $(chatMsg).on('keydown', function(e) {
+  //   if (e.keyCode === ENTER_KEY_CODE) {
+  //     sendChat();
+  //   }
+  // });
+
+  // $('body').on('keydown', function(e) {
+  //   if (e.altKey && e.keyCode === C_KEY_CODE
+  //    || e.ctrlKey && e.keyCode === TILDE_KEY_CODE
+  //    || e.keyCode === ENTER_KEY_CODE) {
+  //     chatMsg.focus();
+  //   }
+  // });
+
+  // $('[data-toggle="tooltip"]').tooltip();
 }
 
 function preloadFirstImages() {
