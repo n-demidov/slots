@@ -518,17 +518,29 @@ function isPercentFired(chancePercent) {
 
 /* === VK Methods === */
 function startVkSdk() {
-  if (isMobileVk) {
+  // if (isMobileVk) {
     // window.name = VK_IFRAME_WINDOW_NAME;
     console.log('loading mobile vk SDK...');
     loadScript(VK_MOBILE_SDK_URL, initVk);
-  } else {
-    console.log('loading vk SDK...');
-    loadScript(VK_SDK_URL, initVk);
-  }
+  // } else {
+  //   console.log('loading vk SDK...');
+  //   loadScript(VK_SDK_URL, initVk);
+  // }
 
   console.log('Loading vk bridge...');
   window.vkBridge.send('VKWebAppInit');
+
+  // if (isMobileVk) {
+  //   // window.name = VK_IFRAME_WINDOW_NAME;
+  //   console.log('loading mobile vk SDK...');
+  //   loadScript(VK_MOBILE_SDK_URL, initVk);
+  // } else {
+  //   console.log('loading vk SDK...');
+  //   loadScript(VK_SDK_URL, initVk);
+  // }
+
+  // console.log('Loading vk bridge...');
+  // window.vkBridge.send('VKWebAppInit');
 }
 
 function initVk() {
