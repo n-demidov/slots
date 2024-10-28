@@ -2,7 +2,7 @@
 
 var LATER_SYMBOL = "&lt;";
 var GRATER_SYMBOL = "&gt;";
-var WEBSOCKET_ENTRY_URL = HOST + "/connect-app";
+var WEBSOCKET_ENTRY_URL = "HOST" + "/connect-app";
 var USER_QUEUE = "/app/from_client";
 var VK_SDK_URL = "https://vk.com/js/api/xd_connection.js?2";
 var VK_MOBILE_SDK_URL = "https://vk.com/js/api/mobile_sdk.js";
