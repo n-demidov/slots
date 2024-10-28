@@ -411,7 +411,7 @@ function getAppId() {
 }
 
 function onSocialNetworkAuthed() {
-  // console.log("onSocialNetworkAuthed");
+  console.log("onSocialNetworkAuthed");
   // isAuthed = true;
 
   // queryParams = parseQueryString();
