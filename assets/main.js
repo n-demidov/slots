@@ -317,7 +317,8 @@ function wrapSpan(text) {
 
 function initUi() {
   console.log("initUi");
-  $("#spinButton").on("mouseup", spinButton);
+  // $("#spinButton").on("mouseup", spinButton);
+  document.getElementById("spin-button").onclick = "spinButton";
 
   // window.scroll(0, 0);
   // chatMsg.focus();
