@@ -66,6 +66,7 @@ function sendAuth(authPayload) {
 function spinButton() {
   spins++;
   if (spins >= SPINS_PER_ADD) {
+    console.log("show add try");
     spins = 0;
     showAdds(80);
   }
