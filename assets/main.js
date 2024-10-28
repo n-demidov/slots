@@ -64,6 +64,7 @@ function sendAuth(authPayload) {
 }
 
 function spinButton() {
+  console.log("spinButton");
   spins++;
   if (spins >= SPINS_PER_ADD) {
     console.log("show add try");
@@ -316,7 +317,6 @@ function wrapSpan(text) {
 
 function initUi() {
   console.log("initUi");
-
   $("#spinButton").on("mouseup", spinButton);
 
   // window.scroll(0, 0);
