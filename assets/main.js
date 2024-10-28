@@ -27,8 +27,8 @@ var OP_RES_USER_INFO = "UserInfo", OP_RES_CHAT = "SendChat",
   OP_RES_GAME_STARTED = "GameStarted", OP_RES_GAME_CHANGED = "GameChanged",
   OP_RES_RATING_TABLE = "RatingTable";
 
-var chatScrolling = $('#chat-output-scrolling');
-var chatMsg = $("#chat-msg-input");
+// var chatScrolling = $('#chat-output-scrolling');
+// var chatMsg = $("#chat-msg-input");
 
 var queryParams;
 var isAuthed = false;
