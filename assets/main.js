@@ -29,7 +29,7 @@ var OP_RES_USER_INFO = "UserInfo", OP_RES_CHAT = "SendChat",
 
 // var chatScrolling = $('#chat-output-scrolling');
 
-var SPINS_PER_ADD = 3;
+var SPINS_PER_ADD = 30;
 var spins = 0;
 
 var queryParams;
