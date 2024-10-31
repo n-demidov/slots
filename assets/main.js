@@ -501,21 +501,21 @@ async function showAdds(chancePercent) {
     return;
   }
 
-  if (getState() === VK_TYPE) {
+  // if (getState() === VK_TYPE) {
     window.vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
     window.vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"});
-  } else if (getState() === YA_TYPE) {
-    ysdk.adv.showFullscreenAdv({
-      callbacks: {
-        onClose: function(wasShown) {
-          console.log(wasShown);
-        },
-        onError: function(error) {
-          console.log(error);
-        }
-      }
-    })
-  }
+  // } else if (getState() === YA_TYPE) {
+  //   ysdk.adv.showFullscreenAdv({
+  //     callbacks: {
+  //       onClose: function(wasShown) {
+  //         console.log(wasShown);
+  //       },
+  //       onError: function(error) {
+  //         console.log(error);
+  //       }
+  //     }
+  //   })
+  // }
 }
 
 function isPercentFired(chancePercent) {
