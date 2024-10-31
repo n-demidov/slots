@@ -433,7 +433,7 @@ function onSocialNetworkAuthed() {
   // preloadFirstImages();
   // connectToServer();
   // initLocalization();
-  // initUi();
+  initUi();
   // initGameUi();
 }
 
