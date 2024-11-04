@@ -25,7 +25,7 @@ const Balance = React.forwardRef((props, ref) => {
 
     return (
         <div  id="balance-container">
-            <h1 id="title">Balance</h1>
+            <h1 id="title">Баланс</h1>
             <h1 id="value">{balanceValue.toFixed(2)}★</h1>
         </div>
     );

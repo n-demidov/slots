@@ -3014,7 +3014,7 @@ const ps = C.forwardRef((s, e) => {
       a.jsxs("div", {
         id: "balance-container",
         children: [
-          a.jsx("h1", { id: "title", children: "Balance" }),
+          a.jsx("h1", { id: "title", children: "Баланс" }),
           a.jsxs("h1", { id: "value", children: [t.toFixed(2), "★"] }),
         ],
       })
