@@ -2670,7 +2670,7 @@ const me = new cs(),
                       children: [
                         a.jsx("h1", {
                           id: "title",
-                          children: "MAJOR FREE SPINS",
+                          children: "ГЛАВНЫЕ БЕСПЛАТНЫЕ СПИНЫ",
                         }),
                         a.jsxs("div", {
                           id: "scatter-context",
@@ -2710,7 +2710,7 @@ const me = new cs(),
                     a.jsxs("div", {
                       id: "section",
                       children: [
-                        a.jsx("h1", { id: "title", children: "MAJORS" }),
+                        a.jsx("h1", { id: "title", children: "ГЛАВНЫЕ" }),
                         a.jsxs("div", {
                           id: "symbols-grid",
                           children: [
@@ -2727,7 +2727,7 @@ const me = new cs(),
                     a.jsxs("div", {
                       id: "section",
                       children: [
-                        a.jsx("h1", { id: "title", children: "MINORS" }),
+                        a.jsx("h1", { id: "title", children: "ВТОРОСТЕПЕННЫЕ" }),
                         a.jsxs("div", {
                           id: "symbols-grid",
                           children: [
