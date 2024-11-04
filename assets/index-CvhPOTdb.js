@@ -2670,7 +2670,7 @@ const me = new cs(),
                       children: [
                         a.jsx("h1", {
                           id: "title",
-                          children: "MAJOR FREE SPINS 3333",
+                          children: "MAJOR FREE SPINS",
                         }),
                         a.jsxs("div", {
                           id: "scatter-context",
