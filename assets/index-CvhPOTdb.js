@@ -1806,9 +1806,7 @@ const k = {
     payout4: (s) => (s * 2).toFixed(2),
     payout3: (s) => (s * 2).toFixed(2),
     description: function (s) {
-      return ` 3 Scatters
- trigger 8
- Free Spins.`;
+      return ` 3 символа Scatter запускают 8 бесплатных спинов.`;
     },
   },
   bell: {
