@@ -2646,7 +2646,7 @@ const me = new cs(),
                 children: [
                   a.jsx("div", {
                     id: "title",
-                    children: a.jsx("h1", { children: "Game information" }),
+                    children: a.jsx("h1", { children: "Информация об игре" }),
                   }),
                   a.jsx(U, {
                     onClick: n,
