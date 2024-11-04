@@ -2924,7 +2924,7 @@ const ps = C.forwardRef((s, e) => {
                 id: "total-bet-wrapper",
                 ref: d,
                 children: [
-                  a.jsx("h1", { id: "title", children: "Bet" }),
+                  a.jsx("h1", { id: "title", children: "Ставка" }),
                   a.jsxs("h1", { id: "value", children: [n, "★"] }),
                 ],
               }),
