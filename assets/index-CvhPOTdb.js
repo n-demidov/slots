@@ -2756,7 +2756,7 @@ const me = new cs(),
                     a.jsxs("div", {
                       id: "section",
                       children: [
-                        a.jsx("h1", { id: "title", children: "PAYLINES" }),
+                        a.jsx("h1", { id: "title", children: "ЛИНИИ ВЫПЛАТ" }),
                         a.jsx("img", {
                           id: "pay-lines-image",
                           src: "\\Slot-Machine\\assets\\images\\pay_lines.svg",
