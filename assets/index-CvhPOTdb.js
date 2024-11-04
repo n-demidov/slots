@@ -1814,7 +1814,7 @@ const k = {
   bell: {
     type: "bell",
     description: (s) =>
-      " The Wild symbol substitutes for all other symbols except the Scatter and value symbols",
+      " Символ Wild заменяет все остальные символы, кроме Scatter и символов ценности",
   },
 };
 class R {
